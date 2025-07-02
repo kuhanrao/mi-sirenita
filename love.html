@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffccd5, #ffe6e6);
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 2.5em;
+    }
+    .message {
+      display: none;
+      margin-top: 40px;
+      font-size: 1.7em;
+      color: #800080;
+      animation: fadeIn 2s ease-in;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 1.2em;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    button:hover {
+      background: #ff85c1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Button for a Surprise 💖</h1>
+  <button onclick="showMessage()">Click Me 💌</button>
+  <div class="message" id="loveNote">
+    You're the most beautiful part of my life, and I love you more every day 💕
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("loveNote").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
